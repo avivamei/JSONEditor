@@ -38,7 +38,7 @@ const Label = (props) => {
       else value = '"' + value + '",';
   }
   return (
-    <span style={style}>
+    <span style={...style, {borderColor: value, borderWidth: "1px"}}>
       {printSpaces(marginLeft)}
       {value}
     </span>
